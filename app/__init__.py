@@ -29,7 +29,7 @@ mydb.connect()
 mydb.create_tables([TimelinePost])
 
 app.register_blueprint(map_app)
-dataFile = open(Path("static/data.json"))
+dataFile = open(Path("app/static/data.json"))
 
 data = json.load(dataFile)
 
