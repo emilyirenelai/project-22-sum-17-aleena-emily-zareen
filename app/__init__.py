@@ -7,6 +7,8 @@ from dotenv import load_dotenv
 load_dotenv()
 app = Flask(__name__)
 
+#comment
+
 mydb =
 MySQLDatabase(os.getenv("MYSQL_DATABASE"),
               user=os.getenv("MYSQL_USER"),
