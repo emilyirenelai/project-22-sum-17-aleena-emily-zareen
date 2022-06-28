@@ -9,53 +9,54 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
-
   </head>
+
   <body>
+
     <div class="post-box">
         <h2>Add a Post</h2>
-      <form id="form" class="form">
-          <div class="input-group mb-3">
-            <label>Name</label>
-            <span class="input-group-text"> </span>
-            <input type="text" class="form-control" placeholder="Name" aria-label="name" aria-describedby="basic-addon1">
-          </div>
+        <form id="form" class="form">
+            <div class="input-group mb-3">
+                <label>Name</label>
+                <span class="input-group-text"> </span>
+                <input type="text" class="form-control" placeholder="Name" aria-label="name" aria-describedby="basic-addon1">
+            </div>
           
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Text</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Text</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
 
     </div>
 
     <div id="container">
-        {% for i in posts %}
-      <div class="content-box">
-        <span class="name">{{ i.name }}</span>
-        <span class="datetime">{{ i.created_at }}</span>
-        <span class="content">{{ i.content }}</span>
-      </div>
-      {% endfor %}
+            {% for i in posts %}
+        <div class="content-box">
+            <span class="name">{{ i.name }}</span>
+            <span class="datetime">{{ i.created_at }}</span>
+            <span class="content">{{ i.content }}</span>
+        </div>
+        {% endfor %}
     </div>
 
  </body>
 
  <script>
-    const form = document.getElementById('form');
-    form.addEventListener('submit', function(e) {
-        console.log("Submitted")
-        e.preventDefault();
-        const formData = new FormData(form);
-        const payload = new URLSearchParams(formData);
-        fetch('/api/timeline_post', {
-        method: 'POST',
-        body: payload,
+        const form = document.getElementById('form');
+        form.addEventListener('submit', function(e) {
+            console.log("Submitted")
+            e.preventDefault();
+            const formData = new FormData(form);
+            const payload = new URLSearchParams(formData);
+            fetch('/api/timeline_post', {
+            method: 'POST',
+            body: payload,
         })
         .then(res => res.json())
         .then(data => {console.log(data)
