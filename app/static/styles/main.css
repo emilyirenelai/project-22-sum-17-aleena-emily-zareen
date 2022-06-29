@@ -26,8 +26,9 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #40488c;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #000153;
+    /* -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #ffffff; */
+    text-shadow : horizontal-shadow vertical-shadow blur white, horizontal-shadow vertical-shadow blur white;
 }
 
 .card h3 {
@@ -60,11 +61,11 @@ h6 {
 
 h4 {
     cursor: default;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 70px;
     position: absolute;
     top: 58%;
-    right: 8%;
+    right: 58%;
     transform: translate(-50%, -50%);
     color: rgb(139, 245, 238);
     -webkit-text-stroke-width: 1.7px;
