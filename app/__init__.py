@@ -78,8 +78,8 @@ TimelinePost.select().order_by(TimelinePost.created_at.desc())
  
 @app.route('/timeline')
 def timeline():
-    return render_template('timeline.html', title="Timeline")
-
+    posts = [model_to_dict(p) for p in TimelinePost.select().order_by(TimelinePost.created_at.desc())]
+    return render_template('timeline.html', title="Timeline", posts=posts)
 
 if __name__ == "__main__":
     app.run(debug=True)
