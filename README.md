@@ -1,4 +1,4 @@
-# :penguin: Pipelining Penguins :penguin: - Team 1 - Portfolio Site
+# Emily's Portfolio Site | Adapted from Pipelining Penguins Pos Team 1 Portfolio Website
 
 Welcome to the portfolio website for Team 1 of the Pipelining Penguins Pod (22.SUM.17)!<br />
 
