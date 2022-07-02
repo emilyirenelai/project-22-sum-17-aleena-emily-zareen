@@ -3,7 +3,7 @@
 import unittest
 from peewee import *
 
-from app import TimelinePost
+from app.__init__ import TimelinePost
 
 MODELS = [TimelinePost]
 
