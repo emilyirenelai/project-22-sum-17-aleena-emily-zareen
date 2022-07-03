@@ -1,7 +1,7 @@
 # test_db.py
 
 import unittest
-from common import TimelinePost
+from tests.common import TimelinePost
 from peewee import *
 
 # from app.__init__ import TimelinePost
@@ -37,4 +37,3 @@ class TestTimelinePost(unittest.TestCase):
         self.assertEqual(second_post.id, 2, "Second post incorrect")
         #TODO: Get timeline posts and assert that they are correct
 
-        
