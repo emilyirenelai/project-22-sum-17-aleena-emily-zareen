@@ -2,7 +2,7 @@
 
 import unittest
 import os
-from common import TimelinePost
+from tests.common import TimelinePost
 os.environ['TESTING'] = 'true'
 
 from app import app 
