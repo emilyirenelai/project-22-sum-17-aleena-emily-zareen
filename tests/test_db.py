@@ -32,9 +32,10 @@ class TestTimelinePost(unittest.TestCase):
     def test_timeline_post(self):
         # Create 2 timeline posts.
         first_post = TimelinePost.create(name='John Doe', email='john@example.com', content='Hello World, I\'m John!')
-        self.assertEqual(first_post.id, 40, "First post incorrect")
+        self.assertEqual(first_post.id, 1, "Failed")
         second_post = TimelinePost.create(name='Jane Doe', email='jane@example.com', content='Hello World, I\'m Jane!')
-        self.assertEqual(second_post.id, 2, "Second post incorrect")
+        self.assertEqual(second_post.id, 2, "Failed")
         #TODO: Get timeline posts and assert that they are correct
-        
+        test_get_1 = TimelinePost.get(id=1)
+        self.assertEqual(first_post.name, test_get_1.name, "Failed")
 
