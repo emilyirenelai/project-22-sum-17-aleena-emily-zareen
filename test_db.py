@@ -1,6 +1,7 @@
 # test_db.py
 
 import unittest
+import common.py
 from peewee import *
 
 from app.__init__ import TimelinePost
