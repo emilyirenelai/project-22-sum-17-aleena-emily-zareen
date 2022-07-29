@@ -71,7 +71,7 @@ h4 {
     color: rgb(139, 245, 238);
     /* -webkit-text-stroke-width: 1.7px;
     -webkit-text-stroke-color: #000153; */
-    background-image: linear-gradient(60deg, #949494, #ffffff, #777777, #ffffff);
+    background-image: linear-gradient(60deg, #cfc9c9, #ffffff, #777777, #ffffff);
     background-clip: text;
     color: transparent;
 }
