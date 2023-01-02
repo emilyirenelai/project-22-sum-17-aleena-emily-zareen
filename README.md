@@ -1,10 +1,10 @@
 # Emily's Portfolio Site | Adapted from Pipelining Penguins Team 1 Portfolio Website
 
-Welcome to the portfolio website for Team 1 of the Pipelining Penguins Pod (22.SUM.17)!<br />
+Welcome to Emily Lai's portfolio website!<br />
 
 ## Inspiration :penguin:
 
-Our website theme was inspired by our pod name, the Pipelining Penguins, and the clever penguins from the Madagascar film franchise! You can see fun animated penguins on the landing page of our site.
+The website theme was inspired by our pod name, the Pipelining Penguins, and the clever penguins from the Madagascar film franchise! You can see fun animated penguins on the landing page of our site.
 
 ## Description :penguin:
 
