@@ -4,7 +4,7 @@ Welcome to Emily Lai's portfolio website!<br />
 
 ## Inspiration :penguin:
 
-The website theme was inspired by our pod name, the Pipelining Penguins, and the clever penguins from the Madagascar film franchise! You can see fun animated penguins on the landing page of our site.
+The website theme was inspired by my MLH Fellowship pod name, the Pipelining Penguins, and the clever penguins from the Madagascar film franchise! You can see fun animated penguins on the landing page of the site.
 
 ## Description :penguin:
 
