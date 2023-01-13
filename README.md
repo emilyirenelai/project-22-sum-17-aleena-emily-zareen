@@ -1,4 +1,4 @@
-# Emily's Portfolio Site | Adapted from Pipelining Penguins Team 1 Portfolio Website
+# Emily's Portfolio Site
 
 Welcome to Emily Lai's portfolio website!<br />
 
