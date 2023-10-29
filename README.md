@@ -15,7 +15,7 @@ The blog has cards in the homepage, as well as a menu to guide to different page
 The website theme was inspired by our pod name, the Pipelining Penguins, and the clever penguins from the Madagascar film franchise! You can see fun animated penguins on the landing page of the site.
 
 ## Challenges
--The learning curve with Flask and Jinja
+-There learning curve with learning how to use Flask and Jinja for the first time.
 
 ## License :copyright:
 
